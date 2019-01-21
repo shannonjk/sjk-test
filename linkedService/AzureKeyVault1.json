@@ -1,9 +1,0 @@
-{
-	"name": "AzureKeyVault1",
-	"properties": {
-		"type": "AzureKeyVault",
-		"typeProperties": {
-			"baseUrl": "https://Sjk-KV.vault.azure.net/"
-		}
-	}
-}
