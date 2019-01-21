@@ -4,9 +4,16 @@
 	"properties": {
 		"type": "SqlServer",
 		"typeProperties": {
-			"connectionString": "integrated security=True;data source=.;initial catalog=TEST",
+			"connectionString": "Integrated Security=True;Data Source=.;Initial Catalog=TEST",
 			"userName": "Freakshow",
-			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI1NTE5MmZjMC05MDMwLTQyZTgtYmU0Ny0yMWFiMzk1ZDdhODciLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "AzureKeyVault1",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sjk-local-pass"
+			}
 		},
 		"connectVia": {
 			"referenceName": "integrationRuntime1",
