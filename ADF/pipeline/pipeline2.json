@@ -1,0 +1,21 @@
+{
+	"name": "pipeline2",
+	"properties": {
+		"activities": [
+			{
+				"name": "Wait1",
+				"type": "Wait",
+				"typeProperties": {
+					"waitTimeInSeconds": 1
+				}
+			}
+		],
+		"variables": {
+			"asd": {
+				"type": "String",
+				"defaultValue": "asd"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
